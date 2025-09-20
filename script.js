@@ -13,10 +13,11 @@ const displayBtns = (btns) => {
   for (let btn of btns) {
     const buttondiv = document.createElement("div");
     buttondiv.innerHTML = `
-    <button onclick="btnOnclick(${btn.level_no})" class="btn btn-outline btn-primary text-xl font-normal all-btn">
+    <button id="lesson-${btn.level_no}" onclick="btnOnclick(${btn.level_no})" class="btn btn-outline btn-primary text-xl font-normal all-Buttons">
           lession-${btn.level_no}
 
         </button>`;
+
     btnContainer.appendChild(buttondiv);
   }
 };
@@ -25,7 +26,16 @@ const displayBtns = (btns) => {
 const btnOnclick = (id) => {
   fetch(`https://openapi.programming-hero.com/api/level/${id}`)
     .then((res) => res.json())
-    .then((data) => displayLessons(data.data));
+    .then((data) => {
+      const activeBtn = document.getElementById(`lesson-${id}`);
+      const allButtons = document.querySelectorAll(".all-Buttons");
+      for (let btn of allButtons) {
+        btn.classList.remove("btnDivBg");
+      }
+      activeBtn.classList.add("btnDivBg");
+
+      displayLessons(data.data);
+    });
 };
 
 // displayings Each lessons words
