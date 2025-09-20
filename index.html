@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English-Janala</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- tailwind & DaisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- script file -->
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar p-4 bg-base-100 shadow-sm bg-teal-500">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-1"
+            >
+              <li>
+                <a
+                  href=""
+                  class="btn btn-outline btn-primary text-xl font-normal"
+                  ><i class="fa-solid fa-circle-question"></i> FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="btn btn-outline btn-primary text-xl font-normal"
+                  ><i class="fa-solid fa-book-open"></i> Learn</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="btn btn-outline btn-primary text-xl font-normal"
+                  ><i class="fa-solid fa-right-from-bracket rotate-180"></i>
+                  Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="" class="btn btn-ghost">
+            <span class="font-bold text-3xl">English</span>
+            <img src="./assets/logo.png" alt="" />
+            <span class="font-semibold text-3xl bangla-font">জানালা</span>
+          </a>
+        </div>
+        <div class="navbar-end hidden md:flex">
+          <ul class="menu menu-horizontal px-1 space-x-4 lg:space-x-6">
+            <li>
+              <a href="" class="btn btn-outline btn-primary text-xl font-normal"
+                ><i class="fa-solid fa-circle-question"></i> FAQ</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-primary text-xl font-normal"
+                ><i class="fa-solid fa-book-open"></i> Learn</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-primary text-xl font-normal"
+                ><i class="fa-solid fa-right-from-bracket rotate-180"></i>
+                Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Banner section -->
+    <section
+      class="flex flex-col-reverse md:flex-row items-center justify-between gap-20 w-11/12 mx-auto my-12"
+    >
+      <div class="content text-center md:text-left md:flex-1 space-y-6">
+        <h2 class="text-5xl font-bold">
+          <span class="text-cyan-400">English</span> is Easy!!
+        </h2>
+        <p class="bangla-font text-2xl">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+        <form>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter Your Name"
+            class="rounded-sm p-1 mb-4 outline-none border-gray-300 pl-3 hover:bg-cyan-100 w-[300px]"
+          />
+          <br />
+          <input
+            type="email"
+            name=""
+            id=""
+            class="rounded-sm p-1 mb-4 outline-none border-gray-300 pl-3 hover:bg-cyan-100 w-[300px]"
+            placeholder="Email"
+          />
+          <br />
+          <button class="btn btn-primary">Get Started</button>
+        </form>
+      </div>
+      <div class="image md:flex-1 flex justify-end items-center">
+        <img src="./assets/hero-student.png" alt="" />
+      </div>
+    </section>
+    <!-- Card-Section -->
+    <section class="w-11/12 mx-auto text-center my-14">
+      <h2 class="text-5xl font-bold">
+        <span class="text-cyan-400">Let's</span> Learn Vocabularies
+      </h2>
+      <div
+        id="divBtn"
+        class="flex flex-wrap justify-center gap-4 items-center mt-8"
+      ></div>
+      <!-- 
+      word-container -->
+      <div
+        id="word-container"
+        class="bg-slate-200 mt-10 grid gap-6 rounded-md md:grid-cols-2 lg:grid-cols-3 p-10"
+      >
+        <div class="space-y-2 col-span-full p-6">
+          <p class="bangla-font text-gray-600 text-xl">
+            আপনি এখনো কোনো Lesson Select করেন নি
+          </p>
+          <p class="bangla-font whitespace-nowrap text-3xl font-semibold">
+            একটি Lesson Select করুন
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question & Answer section -->
+    <section class="w-11/12 mx-auto space-y-4 mb-14">
+      <div
+        tabindex="0"
+        class="bg-[#6a6a8a] text-white focus:bg-secondary focus:text-secondary-content collapse"
+      >
+        <div class="collapse-title font-semibold">
+          1. How can I start learning English on this website?
+        </div>
+        <div class="collapse-content text-sm">
+          You can start by exploring our beginner lessons, interactive
+          exercises, and quizzes. We also offer structured courses to guide you
+          step by step.
+        </div>
+      </div>
+
+      <div
+        tabindex="0"
+        class="bg-[#6a6a8a] text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+      >
+        <div class="collapse-title font-semibold">
+          2. Is this website free to use?
+        </div>
+        <div class="collapse-content text-sm">Yes,it is fully free to use.</div>
+      </div>
+
+      <div
+        tabindex="0"
+        class="bg-[#6a6a8a] text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+      >
+        <div class="collapse-title font-semibold">
+          3. Do I need to create an account?
+        </div>
+        <div class="collapse-content text-sm">
+          Yes,click the "Sign Up" button in the top right corner and follow the
+          registration process.
+        </div>
+      </div>
+
+      <div
+        tabindex="0"
+        class="bg-[#6a6a8a] text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+      >
+        <div class="collapse-title font-semibold">
+          4. How can I build my English vocabulary?
+        </div>
+        <div class="collapse-content text-sm">
+          Read English daily and note new words in a notebook. Review them with
+          flashcards or apps like Anki/Quizlet. Use those words in your own
+          speaking or writing.
+        </div>
+      </div>
+
+      <div
+        tabindex="0"
+        class="bg-[#6a6a8a] text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+      >
+        <div class="collapse-title font-semibold">
+          5. Do you offer certificates for completed courses?
+        </div>
+        <div class="collapse-content text-sm">No .</div>
+      </div>
+    </section>
+
+    <!-- Footer section.... -->
+    <footer
+      class="bg-teal-500 flex flex-col md:flex-row md:justify-between md:items-center p-14 md:px-[40px] xl:px-[200px] gap-10"
+    >
+      <div class="left space-y-3">
+        <div class="flex gap-1">
+          <span class="font-bold text-3xl">English</span>
+          <img src="./assets/logo.png" alt="" />
+          <span class="font-semibold text-3xl bangla-font">জানালা</span>
+        </div>
+
+        <p class="bangla-font">ইংরেজি শিখুন সহজে</p>
+        <p class="font-semibold">Providing ED-Tech Applications since 2025</p>
+      </div>
+      <div class="right">
+        <p class="text-xl font-semibold">FOLLOW US</p>
+        <div class="flex gap-4">
+          <a href="" class="text-xl"><i class="fa-brands fa-facebook"></i></a>
+
+          <a href="" class="text-xl"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="" class="text-xl"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="" class="text-xl"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
