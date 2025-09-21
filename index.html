@@ -158,7 +158,13 @@
         class="flex flex-wrap justify-center gap-4 items-center mt-8"
       ></div>
       <!-- 
-      word-container -->
+
+<!-- loading /spinner section -->
+      <section id="spinner" class="mx-auto mt-12 hidden">
+        <span class="loading loading-bars loading-xl"></span>
+      </section>
+
+      <!-- word-container -->
       <div
         id="word-container"
         class="bg-slate-200 mt-10 grid gap-6 rounded-md md:grid-cols-2 lg:grid-cols-3 p-10"
@@ -237,6 +243,22 @@
         <div class="collapse-content text-sm">No .</div>
       </div>
     </section>
+
+    <!-- modal.... -->
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="details-container" class="mt-8"></div>
+
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <!-- Footer section.... -->
     <footer
